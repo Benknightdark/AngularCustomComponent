@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProgressComponent } from './progress/progress.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProgressComponent
+    ProgressComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule,

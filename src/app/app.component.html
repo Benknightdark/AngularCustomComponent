@@ -1,3 +1,3 @@
-<app-progress [ProgressNumber]="20"></app-progress>
-
+<app-progress [ProgressNumber]="InitNumber"></app-progress>
+<app-countdown [Init]="InitNumber" (onComplete)="onCompleteEvent($event)" (onDecrease)="onDecreaseEvent($event)"></app-countdown>
 <router-outlet></router-outlet>

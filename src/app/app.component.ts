@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  InitNumber:number=0;
+  onCompleteEvent(event){
+
+  }
+  onDecreaseEvent(event){
+    this.InitNumber=event;
+
+  }
 }

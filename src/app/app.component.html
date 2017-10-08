@@ -1,3 +1,9 @@
 <app-progress [ProgressNumber]="InitNumber"></app-progress>
-<app-countdown [Init]="InitNumber" (onComplete)="onCompleteEvent($event)" (onDecrease)="onDecreaseEvent($event)"></app-countdown>
+<app-countdown
+#CountDown
+[Init]="InitNumber"
+(onComplete)="onCompleteEvent($event)"
+(onDecrease)="onDecreaseEvent($event)"></app-countdown>
+<input type=number [(ngModel)]="InitNumber" placeholder="InitNumber">
+<button (click)="CountDown.startCountdown();CountDown.Counter=InitNumber;">Restart</button>
 <router-outlet></router-outlet>
